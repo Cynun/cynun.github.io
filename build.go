@@ -105,7 +105,6 @@ func main() {
 	cmd.Stdout = os.Stdout
 	cmd.Stderr = os.Stderr
 	cmd.Stdin = strings.NewReader(catalog.String())
-
 	chkerr(cmd.Run())
 
 	logger.Info("Generated " + strconv.Itoa(len(articles)) + " articles and index.html.")
