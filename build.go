@@ -35,7 +35,16 @@ type Article struct {
 }
 
 func cleanUp(dir string) error {
-	return exec.Command("bash", "-c", "rm -rf '"+dir+"/*'").Run()
+	entries, err := filepath.Glob(filepath.Join(dir, "*"))
+	if err != nil {
+		return err
+	}
+	for _, entry := range entries {
+		if err := os.RemoveAll(entry); err != nil {
+			return err
+		}
+	}
+	return nil
 }
 
 func main() {
