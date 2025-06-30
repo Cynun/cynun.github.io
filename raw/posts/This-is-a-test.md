@@ -41,6 +41,5 @@ Have a nice day.
 
 ---
 ![this is a profile pic](../images/Cynun_400x400.jpg)
-![this is a random picture](https://picsum.photos/seed/picsum/768/512)
 
 [^1]: this is a footer test.
