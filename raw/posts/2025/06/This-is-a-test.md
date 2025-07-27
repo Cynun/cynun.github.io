@@ -1,3 +1,13 @@
+---
+title: This is a test
+date: 2025/06/29
+keywords: [test]
+abstract: |
+  This is a abstract.
+
+  It consists of two paragraphs.
+---
+
 # This is a Test
 
 ## This is a subtitletest
